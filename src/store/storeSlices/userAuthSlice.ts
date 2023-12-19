@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { RootState } from '../store.ts';
+import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../store.ts";
 import {
   OverviewAccountsDetailsType,
   OverviewFeesDetailsType,
@@ -7,7 +7,7 @@ import {
   OverviewPurchaseDetailsType,
   UserType,
   OverviewWithdrawalsDetailsType,
-} from '../../types/types.ts';
+} from "../../types/types.ts";
 
 export interface userAuthSliceType {
   loading: boolean;
@@ -21,7 +21,7 @@ export interface userAuthSliceType {
     fees: OverviewFeesDetailsType | null;
   };
 }
-const initialState: userAuthSliceType = {
+export const initialState: userAuthSliceType = {
   loading: false,
   appLoading: true,
   userData: null,
@@ -35,7 +35,7 @@ const initialState: userAuthSliceType = {
 };
 
 const userAuthSlice = createSlice({
-  name: 'userAuthSlice',
+  name: "userAuthSlice",
   initialState: initialState,
   reducers: {
     setUser: (state, action) => {
