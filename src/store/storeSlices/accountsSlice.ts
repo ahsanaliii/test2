@@ -13,7 +13,7 @@ export const initialState: accountsSliceType = {
   selectedAccountId: null,
 };
 
-export const accountsSlice = createSlice({
+export const accountsSlice = createSlice({  
   name: "accountsSlice",
   initialState: initialState,
   reducers: {
